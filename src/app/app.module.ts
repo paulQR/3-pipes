@@ -10,11 +10,11 @@ import localeEs from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
 registerLocaleData(localeEs);
 
-import { DomSeguroPipe } from './pipes/domseguro.pipe';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 @NgModule({
   imports: [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
+  declarations: [ AppComponent, HelloComponent, DomseguroPipe ],
   providers: [ { provide: LOCALE_ID, useValue: 'es' } ],
   bootstrap: [ AppComponent ]
 })
