@@ -29,4 +29,8 @@ export class AppComponent  {
   valorDePromesa = new Promise( (resolve, reject)=>{
     setTimeout(()=>resolve('Llego la data!'),3500);
   });
+
+  fecha = new Date();
+
+  video = "dj2rpDxpcjI";
 }
