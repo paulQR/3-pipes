@@ -12,9 +12,11 @@ registerLocaleData(localeEs);
 
 import { DomseguroPipe } from './pipes/domseguro.pipe';
 
+import { CapitalizadoPipe } from './pipes/capitalizado.pipe';
+
 @NgModule({
   imports: [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, DomseguroPipe ],
+  declarations: [ AppComponent, HelloComponent, DomseguroPipe,CapitalizadoPipe ],
   providers: [ { provide: LOCALE_ID, useValue: 'es' } ],
   bootstrap: [ AppComponent ]
 })
