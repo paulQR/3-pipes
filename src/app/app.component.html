@@ -29,7 +29,22 @@
         <td> lowercase </td>
         <td> {{ nombre | lowercase}}</td>
       </tr>
-
+      <tr>
+        <td>{{nombre}}</td>
+        <td> slice:3 </td>
+        <!-- elimina las primeras 3 posiciones del nombre
+             Fernando -> nando
+         -->
+        <td> {{ nombre | slice:3}}</td>
+      </tr>
+      <tr>
+        <td>{{nombre}}</td>
+        <td> slice:0:3 </td>
+        <!-- se obtiene las primeras 3 letras 
+           Fernando -> Fer
+        -->
+        <td> {{ nombre | slice:0:3}}</td>
+      </tr>      
     </tbody>
 </table>
 
