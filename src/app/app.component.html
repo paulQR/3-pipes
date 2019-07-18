@@ -136,15 +136,15 @@
       <tr>
         <td>{{nombre}}</td>
         <td> 
-            contraseña: {{ activar }}
+            contrasena: {{ activar }}
             <br>
             <button 
                 (click)="activar = !activar"
-                type=
-
+                type="buttton"
+                class="btn btn-outline-primary">Activar/desactivar</button>
         </td>
 
-        <td> {{nombre2 | capitalizado:false}}</td>
+        <td> {{nombre | contrasena:activar}}</td>
       </tr>                                                 
     </tbody>
 </table>
