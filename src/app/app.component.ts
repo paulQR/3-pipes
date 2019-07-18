@@ -34,4 +34,6 @@ export class AppComponent  {
   fecha = new Date();
 
   video = "dj2rpDxpcjI";
+
+  activar:boolean = true;
 }
