@@ -6,14 +6,17 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class ContrasenaPipe implements PipeTransform{
 
-  transform(value:string, activar?:boolean): string{
-    let nombre = value;
-    if(activar){
-      nombre = "";
-      for(let i=0; i<value.length;i++){
-          nombre = nombre + "*";
-      }      
-    }
-    return nombre;
+  transform(value:string, activar:boolean = true): string{
+
+      if(activar){
+        let salida:string = "";
+        for(let i=0; i<value.length;i++){
+            salida+="*";
+        }
+        return salida;      
+      }else{
+        return value;
+      }  
+
   }
 }
